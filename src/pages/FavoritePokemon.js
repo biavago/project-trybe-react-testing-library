@@ -23,7 +23,7 @@ class FavoritePokemon extends React.Component {
         ) : (
           pokemonList.map((pokemon) => (
             <div key={ pokemon.id } className="favorite-pokemonList">
-              <Pokemon pokemon={ pokemon } isFavorite />
+              <Pokemon data-testid='pokemon-name' pokemon={ pokemon } isFavorite />
             </div>
           ))
         ) }
